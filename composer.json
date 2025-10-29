@@ -1,0 +1,29 @@
+{
+    "name": "acme/rapidfuzz-php",
+    "description": "High-performance PHP 8.3 fuzzy string matching inspired by RapidFuzz",
+    "type": "library",
+    "license": "MIT",
+    "require": {
+        "php": "^8.3",
+        "ext-intl": "*",
+        "ext-mbstring": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "RapidFuzz\\": "src/RapidFuzz/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "RapidFuzz\\Tests\\": "tests/"
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "scripts": {
+        "test": "@php vendor/bin/phpunit"
+    }
+}
